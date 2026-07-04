@@ -3,32 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118FA4C1090038313E7ECFCF /* AgentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F3BF01AE828407F65FD8FC /* AgentConfig.plist */; };
 		19452E1E7434A1171EC78140 /* AgentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377472186090B25A8BFC77A /* AgentClient.swift */; };
 		9CB2586439B58D74922FDC18 /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CFD82EBFA987288591AA07 /* ProjectRowView.swift */; };
 		9DA615E69F7F91F82C9B13B9 /* ContainerProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB7208B945A3970A060ED6 /* ContainerProject.swift */; };
 		A904D84D873E2A515D6FEEC5 /* CIloopiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661BE5D215EAC2CF76E37052 /* CIloopiOSApp.swift */; };
+		A94B2BB537D9E405CA7E8EC4 /* AgentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C368C35481F0F79389C9A /* AgentConfig.swift */; };
 		AA3DBDC5A152AD11D885231C /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A3AB8ABA8A6BC0329F656 /* ProjectsViewModel.swift */; };
 		ABBC346061BC7BB15793C07C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */; };
 		B4897AF2617D1BE99295045D /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64275535EE8C849D8AFC00 /* ProjectsListView.swift */; };
+		C241576F0DADD528B5D1FB25 /* AgentConfig.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126FB4F00753C072C20F7993 /* AgentConfig.example.plist */; };
+		F1219A8E9F9DDEAB96D4CD30 /* AgentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD55186031360373E9086F /* AgentEndpoint.swift */; };
 		F96E4CB2C37C56EB952CA1BC /* ContainerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC755EA33A79782702433F0E /* ContainerDetailView.swift */; };
 		FB4B2DEAC56EF9681BFC1A7D /* MockAgentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C139591D0DFBD64AE0B7FF7A /* MockAgentClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F3BF01AE828407F65FD8FC /* AgentConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AgentConfig.plist; sourceTree = "<group>"; };
 		06CFD82EBFA987288591AA07 /* ProjectRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRowView.swift; sourceTree = "<group>"; };
+		126FB4F00753C072C20F7993 /* AgentConfig.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AgentConfig.example.plist; sourceTree = "<group>"; };
 		1BBB7208B945A3970A060ED6 /* ContainerProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerProject.swift; sourceTree = "<group>"; };
 		3DD033B861FDC3DF9F59C5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		661BE5D215EAC2CF76E37052 /* CIloopiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIloopiOSApp.swift; sourceTree = "<group>"; };
-		6A33B1CC995FC307223B4DDA /* CIloopiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CIloopiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */ = {isa = PBXFileReference; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6A33B1CC995FC307223B4DDA /* CIloopiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIloopiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C139591D0DFBD64AE0B7FF7A /* MockAgentClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAgentClient.swift; sourceTree = "<group>"; };
 		E377472186090B25A8BFC77A /* AgentClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentClient.swift; sourceTree = "<group>"; };
 		EC755EA33A79782702433F0E /* ContainerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerDetailView.swift; sourceTree = "<group>"; };
 		F26A3AB8ABA8A6BC0329F656 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		F91C368C35481F0F79389C9A /* AgentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentConfig.swift; sourceTree = "<group>"; };
+		FADD55186031360373E9086F /* AgentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEndpoint.swift; sourceTree = "<group>"; };
 		FE64275535EE8C849D8AFC00 /* ProjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				E377472186090B25A8BFC77A /* AgentClient.swift */,
+				F91C368C35481F0F79389C9A /* AgentConfig.swift */,
+				FADD55186031360373E9086F /* AgentEndpoint.swift */,
 				C139591D0DFBD64AE0B7FF7A /* MockAgentClient.swift */,
 			);
 			path = Networking;
@@ -115,6 +125,8 @@
 		DAF40C9C97AD1BBA21665014 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				126FB4F00753C072C20F7993 /* AgentConfig.example.plist */,
+				05F3BF01AE828407F65FD8FC /* AgentConfig.plist */,
 				3DD033B861FDC3DF9F59C5EF /* Info.plist */,
 				B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */,
 			);
@@ -172,8 +184,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 05ED404D99D66937946FDB4C /* Build configuration list for PBXProject "CIloopiOS" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -197,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C241576F0DADD528B5D1FB25 /* AgentConfig.example.plist in Resources */,
+				118FA4C1090038313E7ECFCF /* AgentConfig.plist in Resources */,
 				ABBC346061BC7BB15793C07C /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19452E1E7434A1171EC78140 /* AgentClient.swift in Sources */,
+				A94B2BB537D9E405CA7E8EC4 /* AgentConfig.swift in Sources */,
+				F1219A8E9F9DDEAB96D4CD30 /* AgentEndpoint.swift in Sources */,
 				A904D84D873E2A515D6FEEC5 /* CIloopiOSApp.swift in Sources */,
 				F96E4CB2C37C56EB952CA1BC /* ContainerDetailView.swift in Sources */,
 				9DA615E69F7F91F82C9B13B9 /* ContainerProject.swift in Sources */,
@@ -283,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LJZ97X76W9;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LJZ97X76W9;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

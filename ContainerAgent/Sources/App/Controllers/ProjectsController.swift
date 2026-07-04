@@ -27,12 +27,12 @@ struct ProjectsController: RouteCollection {
     }
 
     @Sendable
-    func run(req: Request) async throws -> ActionResult {
+    func run(req: Request) async throws -> RunResult {
         let projectID = try req.requiredParameter("projectID")
         let project = try req.application.projectRegistry.find(id: projectID)
         let containerName = "\(project.id)-\(Int(Date().timeIntervalSince1970))"
         let output = try await req.application.containerCLI.run(project: project, containerName: containerName)
-        return ActionResult(success: true, output: output)
+        return RunResult(containerName: containerName, output: output)
     }
 
     // MARK: - Containers

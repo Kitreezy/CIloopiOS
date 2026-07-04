@@ -58,7 +58,7 @@ Authorization: Bearer <AGENT_TOKEN>
 |-------|---------------------------------------|----------------------------------------|
 | GET   | `/projects`                           | Список проектов из конфига             |
 | POST  | `/projects/:projectID/build`          | Собрать образ проекта                  |
-| POST  | `/projects/:projectID/run`            | Запустить контейнер из образа проекта  |
+| POST  | `/projects/:projectID/run`            | Запустить контейнер из образа проекта (ответ содержит `containerName`) |
 | GET   | `/projects/containers`                | Список всех контейнеров                |
 | GET   | `/projects/containers/:name/logs`     | Логи контейнера                        |
 | POST  | `/projects/containers/:name/stop`     | Остановить контейнер                   |
@@ -76,8 +76,13 @@ curl -H "Authorization: Bearer <секрет>" http://127.0.0.1:8080/projects
 - REST API поверх обёртки
 - Bearer-токен аутентификация на все эндпоинты
 - Проверено вручную: сборка проекта, авторизация, список контейнеров
+- iOS-клиент (CIloopiOS, SwiftUI): список проектов, детали контейнера, действия build/run/stop, логи
+- Клиент подключён к живому агенту (`LiveAgentClient`), проверено: реальные данные из `projects.json`
+  вместо моков, ошибки сервера долетают до UI без падения приложения
+- Локальный токен и адрес агента задаются через `Resources/AgentConfig.plist` (не коммитится,
+  есть шаблон `AgentConfig.example.plist`)
 
 ## Что дальше
 
-- iOS-клиент (SwiftUI): список проектов и действия над контейнерами
+- Реальный проект с `Containerfile` для честной проверки build/run
 - Удалённый доступ (не из локальной сети) через приватный туннель (например, Tailscale)
