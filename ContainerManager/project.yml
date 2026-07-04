@@ -1,0 +1,26 @@
+name: ContainerManager
+options:
+  bundleIdPrefix: com.ostin.containermanager
+  deploymentTarget:
+    iOS: "18.0"
+
+settings:
+  SWIFT_VERSION: "6.0"
+
+targets:
+  ContainerManager:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Core
+      - path: Features
+      - path: Resources
+    info:
+      path: Resources/Info.plist
+      properties:
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ostin.containermanager
+        TARGETED_DEVICE_FAMILY: "1"
