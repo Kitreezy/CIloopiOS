@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "id": "example-api",
+      "name": "Example API",
+      "path": "/Users/shiruba433/Development/example-api",
+      "containerfile": "Containerfile",
+      "imageName": "example-api:latest"
+    }
+  ]
+}
