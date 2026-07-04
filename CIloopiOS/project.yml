@@ -1,6 +1,6 @@
-name: ContainerManager
+name: CIloopiOS
 options:
-  bundleIdPrefix: com.ostin.containermanager
+  bundleIdPrefix: com.ostin.cliopios
   deploymentTarget:
     iOS: "18.0"
 
@@ -8,7 +8,7 @@ settings:
   SWIFT_VERSION: "6.0"
 
 targets:
-  ContainerManager:
+  CIloopiOS:
     type: application
     platform: iOS
     sources:
@@ -22,5 +22,5 @@ targets:
         UILaunchScreen: {}
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.ostin.containermanager
+        PRODUCT_BUNDLE_IDENTIFIER: com.ostin.cliopios
         TARGETED_DEVICE_FAMILY: "1"
