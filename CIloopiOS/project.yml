@@ -20,6 +20,9 @@ targets:
       path: Resources/Info.plist
       properties:
         UILaunchScreen: {}
+        NSLocalNetworkUsageDescription: "Приложению нужен доступ к локальной сети для подключения к агенту на Mac."
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ostin.cliopios

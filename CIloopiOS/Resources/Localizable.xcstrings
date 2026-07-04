@@ -52,6 +52,23 @@
         }
       }
     },
+    "container.logs.refresh" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refresh"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обновить"
+          }
+        }
+      }
+    },
     "container.logs.title" : {
       "extractionState" : "stale",
       "localizations" : {

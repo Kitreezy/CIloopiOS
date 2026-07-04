@@ -11,13 +11,7 @@ struct ProjectsListView: View {
         NavigationStack {
             List(viewModel.projects) { project in
                 NavigationLink {
-                    ContainerDetailView(
-                        project: project,
-                        container: viewModel.containers[project.id],
-                        onBuild: { await viewModel.build(project: project) },
-                        onRun: { await viewModel.run(project: project) },
-                        onStop: { await viewModel.stop(project: project) }
-                    )
+                    ContainerDetailView(viewModel: viewModel, project: project)
                 } label: {
                     ProjectRowView(
                         project: project,

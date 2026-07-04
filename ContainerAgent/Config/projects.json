@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "id": "example-api",
-      "name": "Example API",
-      "path": "/Users/shiruba433/Development/example-api",
+      "id": "test-go-server",
+      "name": "Test Go Server",
+      "path": "/Users/shiruba433/Development/test-go-server",
       "containerfile": "Containerfile",
-      "imageName": "example-api:latest"
+      "imageName": "test-go-server:latest"
     }
   ]
 }

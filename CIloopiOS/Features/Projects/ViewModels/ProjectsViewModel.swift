@@ -51,4 +51,14 @@ final class ProjectsViewModel {
             errorMessage = error.localizedDescription
         }
     }
+
+    func refreshLogs(project: ContainerProject) async {
+        guard let container = containers[project.id] else { return }
+        do {
+            let logs = try await client.fetchLogs(containerID: container.id)
+            containers[project.id]?.logs = logs
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
 }

@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
     <key>BaseURL</key>
+    <!-- 127.0.0.1 работает только для симулятора. Для реального устройства
+         используйте LAN-адрес Mac, например http://192.168.1.10:8080 -->
     <string>http://127.0.0.1:8080</string>
     <key>Token</key>
     <string>replace-with-your-agent-token</string>

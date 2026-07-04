@@ -11,6 +11,7 @@
 		19452E1E7434A1171EC78140 /* AgentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E377472186090B25A8BFC77A /* AgentClient.swift */; };
 		9CB2586439B58D74922FDC18 /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CFD82EBFA987288591AA07 /* ProjectRowView.swift */; };
 		9DA615E69F7F91F82C9B13B9 /* ContainerProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB7208B945A3970A060ED6 /* ContainerProject.swift */; };
+		A1BD96D519A716DC82EB8AB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 262E46BEE4B0976EB2745F7D /* InfoPlist.strings */; };
 		A904D84D873E2A515D6FEEC5 /* CIloopiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661BE5D215EAC2CF76E37052 /* CIloopiOSApp.swift */; };
 		A94B2BB537D9E405CA7E8EC4 /* AgentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C368C35481F0F79389C9A /* AgentConfig.swift */; };
 		AA3DBDC5A152AD11D885231C /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A3AB8ABA8A6BC0329F656 /* ProjectsViewModel.swift */; };
@@ -30,8 +31,10 @@
 		3DD033B861FDC3DF9F59C5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		661BE5D215EAC2CF76E37052 /* CIloopiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIloopiOSApp.swift; sourceTree = "<group>"; };
 		6A33B1CC995FC307223B4DDA /* CIloopiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIloopiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94603514C4E499366ACB5D0A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C139591D0DFBD64AE0B7FF7A /* MockAgentClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAgentClient.swift; sourceTree = "<group>"; };
+		DF92D32BAEE9C5DE00730578 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E377472186090B25A8BFC77A /* AgentClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentClient.swift; sourceTree = "<group>"; };
 		EC755EA33A79782702433F0E /* ContainerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerDetailView.swift; sourceTree = "<group>"; };
 		F26A3AB8ABA8A6BC0329F656 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 				126FB4F00753C072C20F7993 /* AgentConfig.example.plist */,
 				05F3BF01AE828407F65FD8FC /* AgentConfig.plist */,
 				3DD033B861FDC3DF9F59C5EF /* Info.plist */,
+				262E46BEE4B0976EB2745F7D /* InfoPlist.strings */,
 				B8521B1F31DCC6414AC3B07C /* Localizable.xcstrings */,
 			);
 			path = Resources;
@@ -192,6 +196,7 @@
 			knownRegions = (
 				Base,
 				en,
+				ru,
 			);
 			mainGroup = 488B55934F293154521BE18D;
 			projectDirPath = "";
@@ -209,6 +214,7 @@
 			files = (
 				C241576F0DADD528B5D1FB25 /* AgentConfig.example.plist in Resources */,
 				118FA4C1090038313E7ECFCF /* AgentConfig.plist in Resources */,
+				A1BD96D519A716DC82EB8AB4 /* InfoPlist.strings in Resources */,
 				ABBC346061BC7BB15793C07C /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +240,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		262E46BEE4B0976EB2745F7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF92D32BAEE9C5DE00730578 /* en */,
+				94603514C4E499366ACB5D0A /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		030E6AFCEE6D6001C7F7C2FD /* Release */ = {
