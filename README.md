@@ -21,7 +21,10 @@
       "name": "Example API",
       "path": "/path/to/project",
       "containerfile": "Containerfile",
-      "imageName": "example-api:latest"
+      "imageName": "example-api:latest",
+      "env": { "GREETING": "hello" },
+      "ports": ["127.0.0.1:8081:8081"],
+      "volumes": ["/host/data:/data"]
     }
   ]
 }
@@ -30,6 +33,11 @@
 - `id` — используется в путях API
 - `path` — рабочая директория, где лежит `Containerfile` (там же будет выполняться `container build`)
 - `imageName` — тег образа, который получит сборка
+- `env` (опционально) — переменные окружения контейнера, передаются как `-e key=value`
+- `ports` (опционально) — проброс портов, передаётся как `-p <значение>` в `container run`.
+  **Важно:** нужно указывать host-IP явно (`127.0.0.1:8081:8081`), формат без IP
+  (`8081:8081`) в Apple Container 1.0 порт не публикует
+- `volumes` (опционально) — bind-монтирование, передаётся как `-v host:container`
 
 ## Запуск
 
@@ -81,6 +89,8 @@ curl -H "Authorization: Bearer <секрет>" http://127.0.0.1:8080/projects
   вместо моков, ошибки сервера долетают до UI без падения приложения
 - Локальный токен и адрес агента задаются через `Resources/AgentConfig.plist` (не коммитится,
   есть шаблон `AgentConfig.example.plist`)
+- Поддержка `env`/`ports`/`volumes` в конфиге проекта — проверено: env-переменная и
+  опубликованный порт долетают до реального контейнера через полный путь агент → API → приложение
 
 ## Что дальше
 

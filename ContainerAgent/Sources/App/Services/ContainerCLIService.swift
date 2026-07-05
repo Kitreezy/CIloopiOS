@@ -51,7 +51,20 @@ final class ContainerCLIService: Sendable {
     }
 
     func run(project: Project, containerName: String) async throws -> String {
-        try await run(["run", "-d", "--name", containerName, project.imageName])
+        var arguments = ["run", "-d", "--name", containerName]
+
+        for (key, value) in project.env ?? [:] {
+            arguments += ["-e", "\(key)=\(value)"]
+        }
+        for port in project.ports ?? [] {
+            arguments += ["-p", port]
+        }
+        for volume in project.volumes ?? [] {
+            arguments += ["-v", volume]
+        }
+
+        arguments.append(project.imageName)
+        return try await run(arguments)
     }
 
     func stop(containerName: String) async throws -> String {

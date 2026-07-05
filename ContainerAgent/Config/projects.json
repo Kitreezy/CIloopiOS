@@ -5,7 +5,26 @@
       "name": "Test Go Server",
       "path": "/Users/shiruba433/Development/test-go-server",
       "containerfile": "Containerfile",
-      "imageName": "test-go-server:latest"
+      "imageName": "test-go-server:latest",
+      "env": {
+        "GREETING": "hello from agent env"
+      },
+      "ports": ["127.0.0.1:8081:8081"],
+      "volumes": null
+    },
+    {
+      "id": "daypin-server",
+      "name": "DayPin Server",
+      "path": "/Users/shiruba433/Development/daypin-server",
+      "containerfile": "Containerfile",
+      "imageName": "daypin-server:latest",
+      "env": {
+        "DB_URL": "postgres://daypin:daypin_dev_pw@192.168.64.1:5432/daypin",
+        "JWT_SECRET": "c84584142cb7095bf933d24572b992eaee504b4520777cb9c581b5eb64ac32ba",
+        "PORT": "8082"
+      },
+      "ports": ["127.0.0.1:8082:8082"],
+      "volumes": null
     }
   ]
 }

@@ -6,6 +6,9 @@ struct Project: Content, Codable {
     let path: String
     let containerfile: String
     let imageName: String
+    let env: [String: String]?
+    let ports: [String]?
+    let volumes: [String]?
 }
 
 struct ProjectRegistry: Codable {
